@@ -94,7 +94,7 @@
   <circle cx="530" cy="220" r="1" fill="#ffffff" opacity="0.5" />
 
   <!-- Branding Text on the Left -->
-  <text x="50" y="105" class="title">JAHNA</text>
+  <text x="50" y="105" class="title">JAHNAVI</text>
   <text x="50" y="138" class="subtitle">AI &amp; INTERACTIVE SYSTEMS ENGINEER</text>
   <text x="50" y="168" class="tagline">Bridging cognitive AI engines with responsive visual universes.</text>
 </svg>
