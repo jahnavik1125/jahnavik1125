@@ -1,4 +1,4 @@
-# Jahna | Creative AI & Interactive Systems Engineer
+# Jahnavi | Creative AI & Interactive Systems Engineer
 
 <p align="center">
   <img src="banner.svg" alt="Jahna's Profile Banner" width="100%">
