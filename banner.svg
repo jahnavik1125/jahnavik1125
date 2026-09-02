@@ -1,28 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05050c" />
-      <stop offset="50%" stop-color="#0a0b16" />
-      <stop offset="100%" stop-color="#120e25" />
+    <linearGradient id="bg-ban" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050714" />
+      <stop offset="50%" stop-color="#090d20" />
+      <stop offset="100%" stop-color="#120c29" />
     </linearGradient>
 
-    <!-- Cyan-Violet Accent Gradient -->
-    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f0ff" />
-      <stop offset="100%" stop-color="#a855f7" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
 
-    <!-- Glowing Filters -->
-    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-    <filter id="glow-violet" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <filter id="glow-banner" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -31,70 +22,74 @@
   </defs>
 
   <style>
-    .title { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-weight: 800; font-size: 44px; fill: url(#primary-grad); letter-spacing: 5px; }
-    .subtitle { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-weight: 600; font-size: 15px; fill: #00f0ff; letter-spacing: 2px; opacity: 0.9; }
-    .tagline { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif; font-weight: 400; font-size: 12px; fill: #8b9bb4; letter-spacing: 0.5px; }
+    .b-name { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 900; font-size: 42px; fill: url(#text-grad); letter-spacing: 4px; }
+    .b-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; font-size: 15px; fill: #00f0ff; letter-spacing: 2px; }
+    .b-inst { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 500; font-size: 13px; fill: #cbd5e1; letter-spacing: 1px; }
+    .b-tagline { font-family: 'Consolas', 'Fira Code', monospace; font-size: 12px; fill: #94a3b8; letter-spacing: 0.5px; }
+    
+    .hud-line { stroke: #1e293b; stroke-width: 1; }
+    .scan-h {
+      animation: scanH 4s linear infinite;
+    }
+    @keyframes scanH {
+      0% { transform: translateY(0); opacity: 0; }
+      15% { opacity: 0.8; }
+      85% { opacity: 0.8; }
+      100% { transform: translateY(220px); opacity: 0; }
+    }
   </style>
 
   <!-- Background -->
-  <rect width="800" height="250" fill="url(#bg-grad)" rx="12" />
+  <rect width="960" height="220" rx="14" fill="url(#bg-ban)" stroke="#00f0ff" stroke-width="1.2" stroke-opacity="0.35" />
 
-  <!-- Constellation/Network Connections (Background Layer) -->
-  <g stroke="#ffffff" stroke-width="0.5" opacity="0.12">
-    <line x1="500" y1="50" x2="620" y2="30" />
-    <line x1="620" y1="30" x2="700" y2="80" />
-    <line x1="700" y1="80" x2="720" y2="180" />
-    <line x1="720" y1="180" x2="640" y2="210" />
-    <line x1="640" y1="210" x2="520" y2="170" />
-    <line x1="520" y1="170" x2="500" y2="50" />
-    
-    <!-- Inner mesh -->
-    <line x1="500" y1="50" x2="580" y2="120" />
-    <line x1="620" y1="30" x2="580" y2="120" />
-    <line x1="700" y1="80" x2="580" y2="120" />
-    <line x1="700" y1="80" x2="660" y2="140" />
-    <line x1="720" y1="180" x2="660" y2="140" />
-    <line x1="640" y1="210" x2="660" y2="140" />
-    <line x1="520" y1="170" x2="580" y2="120" />
-    <line x1="520" y1="170" x2="660" y2="140" />
-    <line x1="580" y1="120" x2="660" y2="140" />
+  <!-- Technical Grid Pattern -->
+  <g stroke="#162238" stroke-width="0.8" opacity="0.5">
+    <line x1="0" y1="55" x2="960" y2="55" />
+    <line x1="0" y1="110" x2="960" y2="110" />
+    <line x1="0" y1="165" x2="960" y2="165" />
+    <line x1="240" y1="0" x2="240" y2="220" />
+    <line x1="480" y1="0" x2="480" y2="220" />
+    <line x1="720" y1="0" x2="720" y2="220" />
   </g>
 
-  <!-- Glowing edges (Accent Layer) -->
-  <g stroke-width="1.2" opacity="0.6">
-    <!-- Cyan paths -->
-    <line x1="500" y1="50" x2="580" y2="120" stroke="#00f0ff" />
-    <line x1="580" y1="120" x2="640" y2="210" stroke="#00f0ff" />
-    <line x1="700" y1="80" x2="660" y2="140" stroke="#00f0ff" />
-    
-    <!-- Violet paths -->
-    <line x1="620" y1="30" x2="580" y2="120" stroke="#a855f7" />
-    <line x1="580" y1="120" x2="660" y2="140" stroke="#a855f7" />
-    <line x1="660" y1="140" x2="720" y2="180" stroke="#a855f7" />
+  <!-- HUD Corner Brackets -->
+  <g stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M 12 24 L 12 12 L 24 12" />
+    <path d="M 948 24 L 948 12 L 936 12" />
+    <path d="M 12 196 L 12 208 L 24 208" />
+    <path d="M 948 196 L 948 208 L 936 208" />
   </g>
 
-  <!-- Glowing Nodes -->
-  <!-- Cyan nodes (Frontend/Interactivity) -->
-  <circle cx="500" cy="50" r="5" fill="#00f0ff" filter="url(#glow-cyan)" />
-  <circle cx="640" cy="210" r="7" fill="#00f0ff" filter="url(#glow-cyan)" />
-  <circle cx="700" cy="80" r="4" fill="#00f0ff" filter="url(#glow-cyan)" />
-  <circle cx="580" cy="120" r="9" fill="#00f0ff" filter="url(#glow-cyan)" />
+  <!-- Right Side Constellation / HUD Graphic -->
+  <g transform="translate(680, 20)">
+    <!-- Rotating HUD Reticle -->
+    <circle cx="140" cy="90" r="70" fill="none" stroke="#1e293b" stroke-width="1" />
+    <circle cx="140" cy="90" r="55" fill="none" stroke="#00f0ff" stroke-width="1" stroke-dasharray="6, 8" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0 140 90" to="360 140 90" dur="12s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="140" cy="90" r="40" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="12, 16" opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" from="360 140 90" to="0 140 90" dur="9s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="140" cy="90" r="6" fill="#00f0ff" filter="url(#glow-banner)" />
+    
+    <!-- Coordinate Nodes -->
+    <circle cx="85" cy="55" r="3.5" fill="#a855f7" />
+    <circle cx="195" cy="65" r="3.5" fill="#00f0ff" />
+    <circle cx="170" cy="135" r="3.5" fill="#10b981" />
+    <circle cx="95" cy="125" r="3.5" fill="#00f0ff" />
 
-  <!-- Violet nodes (AI/DS/Data System) -->
-  <circle cx="620" cy="30" r="6" fill="#a855f7" filter="url(#glow-violet)" />
-  <circle cx="720" cy="180" r="8" fill="#a855f7" filter="url(#glow-violet)" />
-  <circle cx="660" cy="140" r="10" fill="#a855f7" filter="url(#glow-violet)" />
-  <circle cx="520" cy="170" r="5" fill="#a855f7" filter="url(#glow-violet)" />
+    <line x1="85" y1="55" x2="140" y2="90" stroke="#a855f7" stroke-width="0.8" opacity="0.5" />
+    <line x1="195" y1="65" x2="140" y2="90" stroke="#00f0ff" stroke-width="0.8" opacity="0.5" />
+    <line x1="170" y1="135" x2="140" y2="90" stroke="#10b981" stroke-width="0.8" opacity="0.5" />
+    <line x1="95" y1="125" x2="140" y2="90" stroke="#00f0ff" stroke-width="0.8" opacity="0.5" />
+  </g>
 
-  <!-- Background decorative small stars -->
-  <circle cx="430" cy="60" r="1" fill="#ffffff" opacity="0.3" />
-  <circle cx="450" cy="170" r="1" fill="#ffffff" opacity="0.4" />
-  <circle cx="760" cy="50" r="1.5" fill="#ffffff" opacity="0.6" />
-  <circle cx="770" cy="120" r="1" fill="#ffffff" opacity="0.2" />
-  <circle cx="530" cy="220" r="1" fill="#ffffff" opacity="0.5" />
-
-  <!-- Branding Text on the Left -->
-  <text x="50" y="105" class="title">JAHNAVI</text>
-  <text x="50" y="138" class="subtitle">AI &amp; Data Science Student</text>
-  <text x="50" y="168" class="tagline">Building Projects and Exploring new technology</text>
+  <!-- Left Content Branding -->
+  <g transform="translate(48, 48)">
+    <text x="0" y="0" font-family="monospace" font-size="11" fill="#00f0ff" letter-spacing="2px">PROFILE.SYSTEM // ONLINE</text>
+    <text x="0" y="44" class="b-name">KANDULA JAHNAVI</text>
+    <text x="0" y="74" class="b-sub">ARTIFICIAL INTELLIGENCE &amp; DATA SCIENCE</text>
+    <text x="0" y="98" class="b-inst">BMS College of Engineering  •  Bengaluru, India</text>
+    <text x="0" y="124" class="b-tagline">&gt; Exploring intelligence through data, models &amp; practical technology</text>
+  </g>
 </svg>

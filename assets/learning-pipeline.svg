@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-pipe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a16" />
+      <stop offset="100%" stop-color="#0c1024" />
+    </linearGradient>
+    <filter id="glow-pipe" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .pipe-node-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; font-size: 11px; font-weight: 700; fill: #ffffff; letter-spacing: 1px; }
+    .pipe-node-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; font-size: 9px; fill: #94a3b8; }
+    
+    .pulse-packet {
+      animation: movePulse 3s linear infinite;
+    }
+    @keyframes movePulse {
+      0% { transform: translateX(0); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateX(600px); opacity: 0; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="760" height="130" rx="12" fill="url(#bg-pipe)" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.3" />
+
+  <!-- Connecting Pipe Base Track -->
+  <line x1="80" y1="65" x2="680" y2="65" stroke="#1e293b" stroke-width="3" />
+  
+  <!-- Active glowing flow lines -->
+  <line x1="80" y1="65" x2="680" y2="65" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="8, 24" stroke-opacity="0.6">
+    <animate attributeName="stroke-dashoffset" from="64" to="0" dur="2s" repeatCount="indefinite" />
+  </line>
+
+  <!-- Moving Data Packets -->
+  <g class="pulse-packet">
+    <circle cx="80" cy="65" r="4" fill="#00f0ff" filter="url(#glow-pipe)" />
+  </g>
+
+  <!-- Stages: 1. INPUT (x=80) 2. LEARNING (x=230) 3. EXPERIMENTING (x=380) 4. BUILDING (x=530) 5. DEPLOYING (x=680) -->
+
+  <!-- Node 1: INPUT -->
+  <g transform="translate(80, 65)">
+    <circle r="18" fill="#0f172a" stroke="#00f0ff" stroke-width="2" />
+    <circle r="6" fill="#00f0ff" />
+    <text x="0" y="32" class="pipe-node-title" text-anchor="middle" fill="#00f0ff">INPUT</text>
+    <text x="0" y="44" class="pipe-node-sub" text-anchor="middle">Data &amp; Concepts</text>
+  </g>
+
+  <!-- Node 2: LEARNING -->
+  <g transform="translate(230, 65)">
+    <circle r="18" fill="#0f172a" stroke="#a855f7" stroke-width="2" />
+    <circle r="6" fill="#a855f7" />
+    <text x="0" y="32" class="pipe-node-title" text-anchor="middle" fill="#a855f7">LEARNING</text>
+    <text x="0" y="44" class="pipe-node-sub" text-anchor="middle">Algorithms &amp; Math</text>
+  </g>
+
+  <!-- Node 3: EXPERIMENTING -->
+  <g transform="translate(380, 65)">
+    <circle r="18" fill="#0f172a" stroke="#00f0ff" stroke-width="2" />
+    <circle r="6" fill="#00f0ff" />
+    <text x="0" y="32" class="pipe-node-title" text-anchor="middle" fill="#00f0ff">EXPERIMENTING</text>
+    <text x="0" y="44" class="pipe-node-sub" text-anchor="middle">Models &amp; CV</text>
+  </g>
+
+  <!-- Node 4: BUILDING -->
+  <g transform="translate(530, 65)">
+    <circle r="18" fill="#0f172a" stroke="#f59e0b" stroke-width="2" />
+    <circle r="6" fill="#f59e0b" />
+    <text x="0" y="32" class="pipe-node-title" text-anchor="middle" fill="#f59e0b">BUILDING</text>
+    <text x="0" y="44" class="pipe-node-sub" text-anchor="middle">Practical Systems</text>
+  </g>
+
+  <!-- Node 5: DEPLOYING -->
+  <g transform="translate(680, 65)">
+    <circle r="18" fill="#0f172a" stroke="#10b981" stroke-width="2" />
+    <circle r="6" fill="#10b981" />
+    <text x="0" y="32" class="pipe-node-title" text-anchor="middle" fill="#10b981">DEPLOYING</text>
+    <text x="0" y="44" class="pipe-node-sub" text-anchor="middle">Real Solutions</text>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-tech" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a16" />
+      <stop offset="100%" stop-color="#0c1024" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .cat-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; font-size: 11px; font-weight: 700; fill: #00f0ff; letter-spacing: 1.5px; }
+    .skill-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; font-size: 11px; font-weight: 600; fill: #e2e8f0; letter-spacing: 0.5px; }
+    .skill-box { fill: #0f172a; stroke: #334155; stroke-width: 1; rx: 6; }
+    .skill-box-cyan { fill: #091a2e; stroke: #00f0ff; stroke-width: 1; stroke-opacity: 0.7; rx: 6; }
+    .skill-box-violet { fill: #1c0e2d; stroke: #a855f7; stroke-width: 1; stroke-opacity: 0.7; rx: 6; }
+    .skill-box-emerald { fill: #09241b; stroke: #10b981; stroke-width: 1; stroke-opacity: 0.7; rx: 6; }
+    .skill-box-amber { fill: #241a09; stroke: #f59e0b; stroke-width: 1; stroke-opacity: 0.7; rx: 6; }
+  </style>
+
+  <!-- Background -->
+  <rect width="760" height="260" rx="12" fill="url(#bg-tech)" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.3" />
+
+  <!-- Category 1: PROGRAMMING -->
+  <g transform="translate(24, 24)">
+    <text x="0" y="12" class="cat-title" fill="#00f0ff">PROGRAMMING LANGUAGES</text>
+    
+    <g transform="translate(0, 24)">
+      <!-- Python -->
+      <rect x="0" y="0" width="100" height="30" class="skill-box-cyan" />
+      <text x="50" y="19" class="skill-text" text-anchor="middle" fill="#00f0ff">Python</text>
+
+      <!-- C -->
+      <rect x="110" y="0" width="70" height="30" class="skill-box-cyan" />
+      <text x="145" y="19" class="skill-text" text-anchor="middle">C</text>
+
+      <!-- C++ -->
+      <rect x="190" y="0" width="80" height="30" class="skill-box-cyan" />
+      <text x="230" y="19" class="skill-text" text-anchor="middle">C++</text>
+
+      <!-- TypeScript -->
+      <rect x="280" y="0" width="120" height="30" class="skill-box-cyan" />
+      <text x="340" y="19" class="skill-text" text-anchor="middle" fill="#00f0ff">TypeScript</text>
+    </g>
+  </g>
+
+  <!-- Category 2: MACHINE LEARNING & DATA -->
+  <g transform="translate(24, 98)">
+    <text x="0" y="12" class="cat-title" fill="#a855f7">MACHINE LEARNING &amp; DATA SCIENCE</text>
+    
+    <g transform="translate(0, 24)">
+      <!-- Machine Learning -->
+      <rect x="0" y="0" width="150" height="30" class="skill-box-violet" />
+      <text x="75" y="19" class="skill-text" text-anchor="middle" fill="#c084fc">Machine Learning</text>
+
+      <!-- Predictive Modeling -->
+      <rect x="160" y="0" width="155" height="30" class="skill-box-violet" />
+      <text x="237" y="19" class="skill-text" text-anchor="middle">Predictive Modeling</text>
+
+      <!-- Data Analytics -->
+      <rect x="325" y="0" width="125" height="30" class="skill-box-violet" />
+      <text x="387" y="19" class="skill-text" text-anchor="middle">Data Analytics</text>
+
+      <!-- Scikit-learn -->
+      <rect x="460" y="0" width="115" height="30" class="skill-box-violet" />
+      <text x="517" y="19" class="skill-text" text-anchor="middle">Scikit-learn</text>
+
+      <!-- NumPy & Pandas -->
+      <rect x="585" y="0" width="125" height="30" class="skill-box-violet" />
+      <text x="647" y="19" class="skill-text" text-anchor="middle">NumPy / Pandas</text>
+    </g>
+  </g>
+
+  <!-- Category 3: COMPUTER VISION & SYSTEMS / HARDWARE -->
+  <g transform="translate(24, 172)">
+    <text x="0" y="12" class="cat-title" fill="#10b981">COMPUTER VISION, EMBEDDED SYSTEMS &amp; INFRASTRUCTURE</text>
+    
+    <g transform="translate(0, 24)">
+      <!-- OpenCV -->
+      <rect x="0" y="0" width="100" height="30" class="skill-box-emerald" />
+      <text x="50" y="19" class="skill-text" text-anchor="middle" fill="#10b981">OpenCV</text>
+
+      <!-- MediaPipe -->
+      <rect x="110" y="0" width="110" height="30" class="skill-box-emerald" />
+      <text x="165" y="19" class="skill-text" text-anchor="middle" fill="#10b981">MediaPipe</text>
+
+      <!-- Arduino / IoT Sensors -->
+      <rect x="230" y="0" width="145" height="30" class="skill-box-amber" />
+      <text x="302" y="19" class="skill-text" text-anchor="middle" fill="#fbbf24">Arduino / Sensors</text>
+
+      <!-- FastAPI & WebSockets -->
+      <rect x="385" y="0" width="165" height="30" class="skill-box" />
+      <text x="467" y="19" class="skill-text" text-anchor="middle">FastAPI / WebSockets</text>
+
+      <!-- PostgreSQL / Docker / Git -->
+      <rect x="560" y="0" width="150" height="30" class="skill-box" />
+      <text x="635" y="19" class="skill-text" text-anchor="middle">PostgreSQL / Git / Docker</text>
+    </g>
+  </g>
+</svg>

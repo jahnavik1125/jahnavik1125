@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-edu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a16" />
+      <stop offset="100%" stop-color="#0c1024" />
+    </linearGradient>
+    <linearGradient id="line-edu" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .edu-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; font-size: 14px; font-weight: 700; fill: #ffffff; letter-spacing: 0.5px; }
+    .edu-deg { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; font-size: 13px; font-weight: 600; fill: #00f0ff; letter-spacing: 0.5px; }
+    .edu-meta { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; font-size: 11px; fill: #94a3b8; }
+    .edu-badge { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; font-size: 10px; font-weight: 700; fill: #10b981; }
+  </style>
+
+  <!-- Background -->
+  <rect width="760" height="140" rx="12" fill="url(#bg-edu)" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.3" />
+
+  <!-- Academic Progression Line -->
+  <line x1="80" y1="45" x2="680" y2="45" stroke="#1e293b" stroke-width="3" />
+  <line x1="80" y1="45" x2="380" y2="45" stroke="url(#line-edu)" stroke-width="3" />
+
+  <!-- Point 1: 2024 Start -->
+  <circle cx="80" cy="45" r="7" fill="#3b82f6" />
+  <text x="80" y="28" class="edu-meta" text-anchor="middle" fill="#64748b">2024</text>
+  <text x="80" y="68" class="edu-meta" text-anchor="middle">COMMENCEMENT</text>
+
+  <!-- Point 2: NOW (3rd Year, Active) -->
+  <circle cx="380" cy="45" r="9" fill="#00f0ff" stroke="#050814" stroke-width="3">
+    <animate attributeName="r" values="8;11;8" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <text x="380" y="26" class="edu-badge" text-anchor="middle">● CURRENT STATUS: 3RD YEAR</text>
+  
+  <!-- Point 3: Expected 2028 Graduation -->
+  <circle cx="680" cy="45" r="7" fill="#10b981" stroke="#1e293b" stroke-width="2" />
+  <text x="680" y="28" class="edu-meta" text-anchor="middle" fill="#10b981">EXPECTED 2028</text>
+  <text x="680" y="68" class="edu-meta" text-anchor="middle">GRADUATION</text>
+
+  <!-- Core Institution & Degree Card Details below -->
+  <g transform="translate(80, 92)">
+    <text x="0" y="0" class="edu-deg">B.E. — ARTIFICIAL INTELLIGENCE &amp; DATA SCIENCE</text>
+    <text x="0" y="20" class="edu-title">BMS College of Engineering (BMSCE)</text>
+    <text x="380" y="20" class="edu-meta">📍 Bengaluru, India  •  Autonomous Institute Affiliated to VTU</text>
+  </g>
+</svg>

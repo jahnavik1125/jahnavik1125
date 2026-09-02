@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-p4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a081a" />
+      <stop offset="100%" stop-color="#140f2e" />
+    </linearGradient>
+    <filter id="glow-air" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="320" height="160" rx="8" fill="url(#bg-p4)" stroke="#a855f7" stroke-width="1" stroke-opacity="0.4" />
+
+  <text x="14" y="22" font-family="monospace" font-size="9" fill="#c084fc" font-weight="700">SPATIAL COMPUTING // AIRSPACE</text>
+  <text x="250" y="22" font-family="monospace" font-size="8" fill="#00f0ff">TRACKING</text>
+
+  <!-- Dynamic Geometric Constellation connecting fingertips -->
+  <g stroke="#00f0ff" stroke-width="1.5" stroke-opacity="0.75" fill="none">
+    <polygon points="100,50 160,35 220,55 190,110 120,115" stroke="#a855f7" stroke-width="1.8" />
+    <line x1="100" y1="50" x2="220" y2="55" stroke="#00f0ff" stroke-width="1" />
+    <line x1="160" y1="35" x2="190" y2="110" stroke="#00f0ff" stroke-width="1" />
+    <line x1="100" y1="50" x2="190" y2="110" stroke="#a855f7" stroke-width="1" />
+    <line x1="160" y1="35" x2="120" y2="115" stroke="#a855f7" stroke-width="1" />
+  </g>
+
+  <!-- Glowing Spatial Vertices -->
+  <g fill="#00f0ff" filter="url(#glow-air)">
+    <circle cx="100" cy="50" r="5" />
+    <circle cx="160" cy="35" r="6" fill="#a855f7">
+      <animate attributeName="r" values="5;7.5;5" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="220" cy="55" r="5" />
+    <circle cx="190" cy="110" r="5.5" fill="#a855f7" />
+    <circle cx="120" cy="115" r="5" />
+  </g>
+
+  <!-- Flowing digital ink stroke -->
+  <path d="M 60 70 Q 160 130 260 85" fill="none" stroke="#00f0ff" stroke-width="3" stroke-linecap="round" opacity="0.85" filter="url(#glow-air)">
+    <animate attributeName="stroke-dasharray" values="10, 200; 150, 200; 10, 200" dur="3s" repeatCount="indefinite" />
+  </path>
+
+  <text x="14" y="150" font-family="monospace" font-size="8" fill="#64748b">MEDIAPIPE CLIENT-SIDE WASM • REAL-TIME SPATIAL GESTURES</text>
+</svg>
