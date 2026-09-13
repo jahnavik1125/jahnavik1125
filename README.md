@@ -177,6 +177,36 @@ operating_philosophy:
       </p>
     </td>
   </tr>
+  <tr>
+    <!-- Project 5: RoadWatch -->
+    <td width="50%" valign="top">
+      <div align="center">
+        <a href="https://github.com/NivedithaHGN/RoadWatch-BIMSTEC-excluding-INDIA">
+          <img src="assets/projects/roadwatch-infra.svg" alt="RoadWatch Infrastructure Intelligence Dashboard" width="100%" />
+        </a>
+      </div>
+      <h3><a href="https://github.com/NivedithaHGN/RoadWatch-BIMSTEC-excluding-INDIA">🛣️ RoadWatch-BIMSTEC-excluding-INDIA</a></h3>
+      <p>
+        Full-stack real-time infrastructure monitoring platform for tracking road projects, citizen complaints, contractor performance, and government analytics powered by Node.js, SQLite, and interactive mapping.
+      </p>
+      <p>
+        <code>Node.js</code> • <code>SQLite</code> • <code>Socket.io</code> • <code>Geospatial Mapping</code> • <code>Infrastructure Analytics</code>
+      </p>
+      <p>
+        <a href="https://github.com/NivedithaHGN/RoadWatch-BIMSTEC-excluding-INDIA"><strong>→ View Repository</strong></a>
+      </p>
+    </td>
+    <td width="50%" valign="top" align="center">
+      <!-- High-Tech Architecture Callout Card -->
+      <br /><br />
+      <p><code>SYSTEM.STATUS // 5 PINNED MODULES DEPLOYED</code></p>
+      <p><strong>"Engineering intelligent algorithms from spatial perception to infrastructure telemetry."</strong></p>
+      <p>
+        <img src="https://img.shields.io/badge/PORTFOLIO-5%20REPOSITORIES-00f0ff?style=flat-square&logo=github&logoColor=000" alt="Repositories" />
+        <img src="https://img.shields.io/badge/CODEBASE-OPEN%20SOURCE-10b981?style=flat-square" alt="Open Source" />
+      </p>
+    </td>
+  </tr>
 </table>
 
 <br />
@@ -190,8 +220,19 @@ operating_philosophy:
 
 <br />
 
-<!-- ==================== GITHUB ACTIVITY ==================== -->
-## 📊 `ACTIVITY_TELEMETRY.hub` // LIVE GITHUB ACTIVITY
+<!-- ==================== GITHUB ACTIVITY & ANIMATED CONTRIBUTION SNAKE ==================== -->
+## 📊 `ACTIVITY_TELEMETRY.hub` // LIVE GITHUB ACTIVITY & SNAKE PROTOCOL
+
+<!-- Animated GitHub Contribution Grid Snake -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jahnavik1125/jahnavik1125/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jahnavik1125/jahnavik1125/output/github-contribution-grid-snake.svg" />
+    <img src="assets/github-snake.svg" alt="Jahnavi's Contribution Grid Snake Animation" width="100%" />
+  </picture>
+</div>
+
+<br />
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=jahnavik1125&show_icons=true&theme=tokyonight&bg_color=070a16&title_color=00f0ff&text_color=94a3b8&icon_color=a855f7&border_color=00f0ff33&hide_border=false" alt="Jahnavi's GitHub Stats" width="48%" />
