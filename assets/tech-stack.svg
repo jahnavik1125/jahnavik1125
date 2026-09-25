@@ -32,13 +32,7 @@
       <rect x="110" y="0" width="70" height="30" class="skill-box-cyan" />
       <text x="145" y="19" class="skill-text" text-anchor="middle">C</text>
 
-      <!-- C++ -->
-      <rect x="190" y="0" width="80" height="30" class="skill-box-cyan" />
-      <text x="230" y="19" class="skill-text" text-anchor="middle">C++</text>
-
-      <!-- TypeScript -->
-      <rect x="280" y="0" width="120" height="30" class="skill-box-cyan" />
-      <text x="340" y="19" class="skill-text" text-anchor="middle" fill="#00f0ff">TypeScript</text>
+    
     </g>
   </g>
 
