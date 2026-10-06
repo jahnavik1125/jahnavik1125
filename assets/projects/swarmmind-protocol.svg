@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-swarm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060e1e" />
+      <stop offset="100%" stop-color="#0a1426" />
+    </linearGradient>
+    <linearGradient id="grad-cyan-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <radialGradient id="core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#060e1e" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Panel -->
+  <rect width="320" height="160" rx="8" fill="url(#bg-swarm)" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.45" />
+
+  <!-- Hexagonal & Grid Overlay -->
+  <g stroke="#1e3a5f" stroke-width="0.8" stroke-dasharray="2,4" opacity="0.6">
+    <line x1="20" y1="40" x2="300" y2="40" />
+    <line x1="20" y1="80" x2="300" y2="80" />
+    <line x1="20" y1="120" x2="300" y2="120" />
+    <line x1="80" y1="20" x2="80" y2="140" />
+    <line x1="160" y1="20" x2="160" y2="140" />
+    <line x1="240" y1="20" x2="240" y2="140" />
+  </g>
+
+  <!-- Title / Telemetry Tag -->
+  <text x="14" y="22" font-family="monospace" font-size="9" fill="#00f0ff" font-weight="700">SWARMMIND // NEURAL CONSENSUS</text>
+  <text x="245" y="22" font-family="monospace" font-size="8" fill="#10b981">MST TESTNET</text>
+
+  <!-- Synaptic Axon Connections -->
+  <path d="M 50 80 Q 105 45, 160 80 T 270 80" fill="none" stroke="#00f0ff" stroke-width="1.8" stroke-dasharray="4, 4" opacity="0.85">
+    <animate attributeName="stroke-dashoffset" from="32" to="0" dur="2s" repeatCount="indefinite" />
+  </path>
+  <path d="M 50 80 Q 105 115, 160 80 T 270 80" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4, 4" opacity="0.75">
+    <animate attributeName="stroke-dashoffset" from="0" to="32" dur="2s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Traveling Synaptic Pulses -->
+  <circle r="4" fill="#00f0ff">
+    <animateMotion dur="2.5s" repeatCount="indefinite" path="M 50 80 Q 105 45, 160 80 T 270 80" />
+  </circle>
+  <circle r="3.5" fill="#a855f7">
+    <animateMotion dur="3s" repeatCount="indefinite" path="M 50 80 Q 105 115, 160 80 T 270 80" />
+  </circle>
+
+  <!-- Central SwarmMind Core Hub -->
+  <circle cx="160" cy="80" r="28" fill="url(#core-glow)" />
+  <circle cx="160" cy="80" r="16" fill="#070c18" stroke="#00f0ff" stroke-width="2" />
+  <circle cx="160" cy="80" r="22" fill="none" stroke="#a855f7" stroke-width="1" stroke-dasharray="3,3">
+    <animateTransform attributeName="transform" type="rotate" from="0 160 80" to="360 160 80" dur="6s" repeatCount="indefinite" />
+  </circle>
+  <text x="160" y="78" font-family="monospace" font-size="8" fill="#ffffff" font-weight="bold" text-anchor="middle">SWARM</text>
+  <text x="160" y="88" font-family="monospace" font-size="7" fill="#00f0ff" font-weight="bold" text-anchor="middle">CORE</text>
+
+  <!-- Agent Somas (Left, Top, Bottom, Right Nodes) -->
+  <!-- Node 1: Input / Alpha -->
+  <circle cx="50" cy="80" r="12" fill="#070c18" stroke="#00f0ff" stroke-width="1.5" />
+  <text x="50" y="83" font-family="monospace" font-size="7" fill="#00f0ff" text-anchor="middle" font-weight="bold">ALPHA</text>
+  <text x="50" y="103" font-family="monospace" font-size="7" fill="#94a3b8" text-anchor="middle">AGENT 01</text>
+
+  <!-- Node 2: Beta -->
+  <circle cx="105" cy="45" r="9" fill="#070c18" stroke="#a855f7" stroke-width="1.5" />
+  <text x="105" y="48" font-family="monospace" font-size="6" fill="#a855f7" text-anchor="middle" font-weight="bold">BETA</text>
+
+  <!-- Node 3: Gamma -->
+  <circle cx="105" cy="115" r="9" fill="#070c18" stroke="#a855f7" stroke-width="1.5" />
+  <text x="105" y="118" font-family="monospace" font-size="6" fill="#a855f7" text-anchor="middle" font-weight="bold">GAMMA</text>
+
+  <!-- Node 4: Output Settlement / Resolver -->
+  <circle cx="270" cy="80" r="13" fill="#070c18" stroke="#10b981" stroke-width="2" />
+  <circle cx="270" cy="80" r="18" fill="none" stroke="#10b981" stroke-width="1" opacity="0.6">
+    <animate attributeName="r" values="13;20;13" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <text x="270" y="83" font-family="monospace" font-size="7" fill="#10b981" text-anchor="middle" font-weight="bold">TRUST</text>
+  <text x="270" y="103" font-family="monospace" font-size="7" fill="#94a3b8" text-anchor="middle">SETTLED ✓</text>
+
+  <!-- Status Metric Footer -->
+  <text x="14" y="148" font-family="monospace" font-size="8" fill="#94a3b8">BOND: <tspan fill="#00f0ff">0.0030 MSTC</tspan> | REPUTATION: <tspan fill="#10b981">+500 bps</tspan></text>
+  <text x="306" y="148" font-family="monospace" font-size="8" fill="#a855f7" text-anchor="end">KECCAK-256</text>
+</svg>

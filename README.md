@@ -102,7 +102,45 @@ operating_philosophy:
 
 <table width="100%" border="0" cellpadding="10" cellspacing="0">
   <tr>
-    <!-- Project 1: AI Maritime Risk Intelligence -->
+    <!-- Project 1: SWARMMIND -->
+    <td width="50%" valign="top">
+      <div align="center">
+        <a href="https://github.com/jahnavik1125/SWARMMIND">
+          <img src="assets/projects/swarmmind-protocol.svg" alt="SwarmMind Autonomous AI Swarm Protocol" width="100%" />
+        </a>
+      </div>
+      <h3><a href="https://github.com/jahnavik1125/SWARMMIND">🧠 SWARMMIND</a></h3>
+      <p>
+        Agent-native blockchain protocol where autonomous AI agents coordinate, commit predictions, stake bonds, and build on-chain trust on MST Testnet.
+      </p>
+      <p>
+        <code>Solidity</code> • <code>Multi-Agent Systems</code> • <code>Ethers.js</code> • <code>Commit-Reveal</code> • <code>MST Testnet</code>
+      </p>
+      <p>
+        <a href="https://github.com/jahnavik1125/SWARMMIND"><strong>→ View Repository</strong></a>
+      </p>
+    </td>
+    <!-- Project 2: AIRSPACE -->
+    <td width="50%" valign="top">
+      <div align="center">
+        <a href="https://github.com/jahnavik1125/AIRSPACE">
+          <img src="assets/projects/airspace-spatial.svg" alt="AIRSPACE Touchless Spatial Platform" width="100%" />
+        </a>
+      </div>
+      <h3><a href="https://github.com/jahnavik1125/AIRSPACE">✨ AIRSPACE</a></h3>
+      <p>
+        Touchless Spatial Human-Computer Interaction Platform transforming camera feeds into an intuitive creative canvas via real-time client-side gesture telemetry.
+      </p>
+      <p>
+        <code>TypeScript</code> • <code>Computer Vision</code> • <code>MediaPipe WASM</code> • <code>Spatial Computing</code>
+      </p>
+      <p>
+        <a href="https://github.com/jahnavik1125/AIRSPACE"><strong>→ View Repository</strong></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <!-- Project 3: AI Maritime Risk Intelligence -->
     <td width="50%" valign="top">
       <div align="center">
         <a href="https://github.com/Kathyayini26/AI-Maritime-Risk-Intelligence">
@@ -120,7 +158,7 @@ operating_philosophy:
         <a href="https://github.com/Kathyayini26/AI-Maritime-Risk-Intelligence"><strong>→ View Repository</strong></a>
       </p>
     </td>
-    <!-- Project 2: Smart Attendance & Timetable Generator -->
+    <!-- Project 4: Smart Attendance & Timetable Generator -->
     <td width="50%" valign="top">
       <div align="center">
         <a href="https://github.com/Kathyayini26/Smart-Attendence-and-Timetable-generator">
@@ -136,44 +174,6 @@ operating_philosophy:
       </p>
       <p>
         <a href="https://github.com/Kathyayini26/Smart-Attendence-and-Timetable-generator"><strong>→ View Repository</strong></a>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <!-- Project 3: SMARTCANE -->
-    <td width="50%" valign="top">
-      <div align="center">
-        <a href="https://github.com/Kathyayini26/SMARTCANE">
-          <img src="assets/projects/smartcane-iot.svg" alt="SmartCane Assistive Hardware Platform" width="100%" />
-        </a>
-      </div>
-      <h3><a href="https://github.com/Kathyayini26/SMARTCANE">🦯 SMARTCANE</a></h3>
-      <p>
-        Assistive navigation hardware platform for visually impaired individuals utilizing ultrasonic distance telemetry, buzzer haptics, and microcontroller processing.
-      </p>
-      <p>
-        <code>C++</code> • <code>Arduino</code> • <code>HC-SR04 Sensors</code> • <code>Embedded Systems</code> • <code>IoT</code>
-      </p>
-      <p>
-        <a href="https://github.com/Kathyayini26/SMARTCANE"><strong>→ View Repository</strong></a>
-      </p>
-    </td>
-    <!-- Project 4: AIRSPACE -->
-    <td width="50%" valign="top">
-      <div align="center">
-        <a href="https://github.com/jahnavik1125/AIRSPACE">
-          <img src="assets/projects/airspace-spatial.svg" alt="AIRSPACE Touchless Spatial Platform" width="100%" />
-        </a>
-      </div>
-      <h3><a href="https://github.com/jahnavik1125/AIRSPACE">✨ AIRSPACE</a></h3>
-      <p>
-        Touchless Spatial Human-Computer Interaction Platform transforming camera feeds into an intuitive creative canvas via real-time client-side gesture telemetry.
-      </p>
-      <p>
-        <code>TypeScript</code> • <code>Computer Vision</code> • <code>MediaPipe WASM</code> • <code>Spatial Computing</code>
-      </p>
-      <p>
-        <a href="https://github.com/jahnavik1125/AIRSPACE"><strong>→ View Repository</strong></a>
       </p>
     </td>
   </tr>
@@ -196,14 +196,22 @@ operating_philosophy:
         <a href="https://github.com/NivedithaHGN/RoadWatch-BIMSTEC-excluding-INDIA"><strong>→ View Repository</strong></a>
       </p>
     </td>
-    <td width="50%" valign="top" align="center">
-      <!-- High-Tech Architecture Callout Card -->
-      <br /><br />
-      <p><code>SYSTEM.STATUS // 5 PINNED MODULES DEPLOYED</code></p>
-      <p><strong>"Engineering intelligent algorithms from spatial perception to infrastructure telemetry."</strong></p>
+    <!-- Project 6: SMARTCANE -->
+    <td width="50%" valign="top">
+      <div align="center">
+        <a href="https://github.com/Kathyayini26/SMARTCANE">
+          <img src="assets/projects/smartcane-iot.svg" alt="SmartCane Assistive Hardware Platform" width="100%" />
+        </a>
+      </div>
+      <h3><a href="https://github.com/Kathyayini26/SMARTCANE">🦯 SMARTCANE</a></h3>
       <p>
-        <img src="https://img.shields.io/badge/PORTFOLIO-5%20REPOSITORIES-00f0ff?style=flat-square&logo=github&logoColor=000" alt="Repositories" />
-        <img src="https://img.shields.io/badge/CODEBASE-OPEN%20SOURCE-10b981?style=flat-square" alt="Open Source" />
+        Assistive navigation hardware platform for visually impaired individuals utilizing ultrasonic distance telemetry, buzzer haptics, and microcontroller processing.
+      </p>
+      <p>
+        <code>C++</code> • <code>Arduino</code> • <code>HC-SR04 Sensors</code> • <code>Embedded Systems</code> • <code>IoT</code>
+      </p>
+      <p>
+        <a href="https://github.com/Kathyayini26/SMARTCANE"><strong>→ View Repository</strong></a>
       </p>
     </td>
   </tr>
